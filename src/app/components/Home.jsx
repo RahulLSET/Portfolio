@@ -47,7 +47,7 @@ const Home = () => {
                             duration: 0.5,
                         }}
 
-                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px] text-slate-800">I am <span className="text-[#4ED7F1] font-satisfy">Prabal</span> <span className="font-satisfy">Adhikari</span></motion.h1>
+                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px] text-slate-800">I am <span className="text-[#4ED7F1] font-satisfy">Rahul</span> <span className="font-satisfy">Shaw</span></motion.h1>
                     <motion.p
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -56,7 +56,7 @@ const Home = () => {
                             duration: 0.7,
                         }}
 
-                        className="font-sans text-sm sm:text-md md:text-lg text-slate-600">Rahul is a passionate full-stack developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.<span className="text-[#4ED7F1]  ml-4"> Call  Me Now .. 8420176164 </span></motion.p>
+                        className="font-sans text-sm sm:text-md md:text-lg text-slate-600">Rahul  Rahul is a passionate full-stack developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.<span className="text-[#4ED7F1]  ml-4"> Call  Me Now .. 8420176164 </span></motion.p>
                     <div className="items-center text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
 
 
