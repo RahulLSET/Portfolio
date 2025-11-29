@@ -2,86 +2,38 @@ name: Deploy Portfolio to EC2 with Docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]   # deploy only when main changes
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+    # 1. Pull latest code
     - name: Checkout Code
       uses: actions/checkout@v3
 
+    # 2. Login Docker Hub
     - name: Login to Docker Hub
       run: |
         echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-    - name: Build Docker Image (FAST)
+    # 3. Build fresh image (no cache so always updates)
+    - name: Build & Push Docker Image
       run: |
-        docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio .
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
+        IMAGE=${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
+        docker build --no-cache -t $IMAGE .
+        docker push $IMAGE
 
-
-    - name: Deploy to EC2
+    # 4. Deploy to EC2
+    - name: Deploy on EC2
       uses: appleboy/ssh-action@v0.1.6
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          docker pull ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
+          docker pull ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
           docker stop portfolio || true
           docker rm portfolio || true
-          docker run -d -p 80:3000 --name portfolio ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
-
-
-
-
-
-
-
-
-
-#           name: Deploy Portfolio to EC2 with Docker
-
-# on:
-#   push:
-#     branches: [ main ]   # correct (not branchs)
-
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - name: Checkout Code
-#       uses: actions/checkout@v3
-
-#     🟢 Cache Docker layers for faster builds
-#     - name: Cache Docker layers
-#       uses: actions/cache@v3
-#       with:
-#         path: /tmp/.buildx-cache
-#         key: ${{ runner.os }}-docker-${{ github.sha }}
-#         restore-keys: |
-#           ${{ runner.os }}-docker-
-
-#     - name: Login to Docker Hub
-#       run: |
-#         echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
-
-#     - name: Build Docker Image (FAST)
-#       run: |
-#         docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio .
-#         docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
-
-#     - name: Deploy to EC2
-#       uses: appleboy/ssh-action@v0.1.6
-#       with:
-#         host: ${{ secrets.EC2_HOST }}
-#         username: ${{ secrets.EC2_USER }}
-#         key: ${{ secrets.EC2_SSH_KEY }}
-#         script: |
-#           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
-#           docker stop portfolio || true
-#           docker rm portfolio || true
-#           docker run -d -p 80:3000 --name portfolio ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
+          docker run -d -p 80:3000 --name portfolio ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
