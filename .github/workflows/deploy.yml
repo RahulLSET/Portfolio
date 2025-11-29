@@ -2,7 +2,7 @@ name: Deploy Portfolio to EC2 with Docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]   # deploy only when main is updated
 
 jobs:
   deploy:
@@ -12,16 +12,21 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
+    # Build Docker image fresh — no cache
+    - name: Build Docker Image
+      run: |
+        docker build --no-cache -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio .
+
     - name: Login to Docker Hub
       run: |
         echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-    - name: Build & Push (No Cache)
+    - name: Push Docker Image
       run: |
-        docker build --no-cache -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio .
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
 
-    - name: Deploy to EC2
+    # Deploy to EC2
+    - name: Deploy on EC2
       uses: appleboy/ssh-action@v0.1.6
       with:
         host: ${{ secrets.EC2_HOST }}
@@ -31,4 +36,5 @@ jobs:
           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
           docker stop portfolio || true
           docker rm portfolio || true
-          docker run -d -p 80:3000 --name portfolio ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
+          docker system prune -a -f
+          docker run -d -p 80:3000 --restart always --name portfolio ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
