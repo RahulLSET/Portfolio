@@ -56,7 +56,7 @@ const Home = () => {
                             duration: 0.7,
                         }}
 
-                        className="font-sans text-sm sm:text-md md:text-lg text-slate-600">Rahul  Rahul is a passionate full-stackRahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul  developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.<span className="text-[#4ED7F1]  ml-4"> Call  Me Now .. XXXXXXXXXXXXX</span></motion.p>
+                        className="font-sans text-sm sm:text-md md:text-lg text-slate-600">Rahul  Rahul is a passionate full-stackRahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul  developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.<span className="text-[#4ED7F1]  ml-4"> Call  Me Now .. 8420176164</span></motion.p>
                     <div className="items-center text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
 
 
