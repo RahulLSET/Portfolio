@@ -1,3 +1,4 @@
+ 
 name: Deploy Portfolio to EC2 with Docker
 
 on:
@@ -22,8 +23,7 @@ jobs:
         echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
     - name: Push Docker Image
-      run: |
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
 
     # Deploy to EC2
     - name: Deploy on EC2
@@ -37,4 +37,4 @@ jobs:
           docker stop portfolio || true
           docker rm portfolio || true
           docker system prune -a -f
-          docker run -d -p 80:3000 --restart always --name portfolio ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
+          docker run -d -p 80:3000 --restart=always --name portfolio ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
