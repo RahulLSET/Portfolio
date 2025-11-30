@@ -65,7 +65,7 @@ dig www.rahulcoder.com +short
 dig rahulcoder.com +short
 dig www.rahulcoder.com +short
   Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul  developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.<span className="text-[#4ED7F1]  ml-4"> Call  Me Now .. Please OKay dig rahulcoder.com +short
-dig www.rahulcoder.com +short
+dig www.rahulcoder.com +short sudipta paul
  bro</span></motion.p>
                     <div className="items-center text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
 
