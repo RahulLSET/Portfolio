@@ -60,6 +60,46 @@ const Home = () => {
 dig www.rahulcoder.com +short
 dig rahulcoder.com +short
 dig www.rahulcoder.com +short
+💔 "Tu Hi Tha" — Broken Heart Lyrics (with emojis)
+
+(Verse 1)
+Raat bhar neend nahi aati 😔
+Soch me khoya rehta hoon 💭
+Teri baatein yaadon me aati 📩
+Har pal me tujhe hi dekhta hoon 👀
+
+Dil ke sheeshe toot gaye 💔
+Awaz abhi bhi gunjti hai 🔊
+Tere jaane ke baad ye dil 😣
+Adhoora sa lagta hai 🥀
+
+(Pre-Chorus)
+Aksar khud se puchta hoon ❓
+Kya galti thi meri 🤦‍♂️
+Kya pyar kam diya tha 🥺
+Ya kismat thi thheri ⏳
+
+(Chorus)
+Tu hi tha, tu hi raha 🥀
+Par ab tu mere saath nahi 🚶‍♀️
+Aankhon se barish hoti jaaye 🌧
+Par tere alfaaz saath nahi 🫥
+
+Maine rakha sab kuch tera naam lekar 📝💔
+Tu chali gayi sapne le kar 🚪🌙
+Main akela reh gaya beech raat ke 😞
+Saanson me toofan le kar 🌪
+
+(Verse 2)
+Dhadkan chalte chalte ruk si jaye 🫀
+Par tere bina bejaan hoon main 🥀
+Teri hasi ki chamak kho gayi ✨
+Raaste sab andhere ho gaye 🌑
+
+Log kehte waqt sab thik karega 🕰
+Par mera waqt hi ruk sa gaya 🧊
+Jo hum the kal, kahani thi pyaari 💞
+Aaj woh dhundla sa ho gaya 🌫
 dig rahulcoder.com +short
 dig www.rahulcoder.com +short
 dig rahulcoder.com +short
