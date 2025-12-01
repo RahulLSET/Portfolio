@@ -47,7 +47,7 @@ const Home = () => {
                             duration: 0.5,
                         }}
 
-                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px] text-slate-800">I am <span className="text-[#4ED7F1] font-satisfy">Sandeep</span> <span className="font-satisfy">Shaw</span></motion.h1>
+                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px] text-slate-800">I am <span className="text-[#4ED7F1] font-satisfy">Sandeep and Chinmay</span> <span className="font-satisfy">Shaw</span></motion.h1>
                     <motion.p
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
