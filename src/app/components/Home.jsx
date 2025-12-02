@@ -47,7 +47,7 @@ const Home = () => {
                             duration: 0.5,
                         }}
 
-                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px] text-slate-800">I am <span className="text-[#4ED7F1] font-satisfy">Sandeep and Chinmay</span> <span className="font-satisfy">Shaw</span></motion.h1>
+                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px] text-slate-800">I am <span className="text-[#4ED7F1] font-satisfy">KavyaSree N </span> <span className="font-satisfy">Shaw</span></motion.h1>
                     <motion.p
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -56,54 +56,11 @@ const Home = () => {
                             duration: 0.7,
                         }}
 
-                        className="font-sans text-sm sm:text-md md:text-lg text-slate-600">Rahul  Rahul is a pasdig rahulcoder.com +short
+                        className="font-sans text-sm sm:text-md md:text-lg text-slate-600">KavyaSree N is a pasdig rahulcoder.com +short
 dig www.rahulcoder.com +short
 dig rahulcoder.com +short
 dig www.rahulcoder.com +short
-💔 "Tu Hi Tha" — Broken Heart Lyrics (with emojis)
 
-(Verse 1)
-Raat bhar neend nahi aati 😔
-Soch me khoya rehta hoon 💭
-Teri baatein yaadon me aati 📩
-Har pal me tujhe hi dekhta hoon 👀
-
-Dil ke sheeshe toot gaye 💔
-Awaz abhi bhi gunjti hai 🔊
-Tere jaane ke baad ye dil 😣
-Adhoora sa lagta hai 🥀
-
-(Pre-Chorus)
-Aksar khud se puchta hoon ❓
-Kya galti thi meri 🤦‍♂️
-Kya pyar kam diya tha 🥺
-Ya kismat thi thheri ⏳
-
-(Chorus)
-Tu hi tha, tu hi raha 🥀
-Par ab tu mere saath nahi 🚶‍♀️
-Aankhon se barish hoti jaaye 🌧
-Par tere alfaaz saath nahi 🫥
-
-Maine rakha sab kuch tera naam lekar 📝💔
-Tu chali gayi sapne le kar 🚪🌙
-Main akela reh gaya beech raat ke 😞
-Saanson me toofan le kar 🌪
-
-(Verse 2)
-Dhadkan chalte chalte ruk si jaye 🫀
-Par tere bina bejaan hoon main 🥀
-Teri hasi ki chamak kho gayi ✨
-Raaste sab andhere ho gaye 🌑
-
-Log kehte waqt sab thik karega 🕰
-Par mera waqt hi ruk sa gaya 🧊
-Jo hum the kal, kahani thi pyaari 💞
-Aaj woh dhundla sa ho gaya 🌫
-dig rahulcoder.com +short
-dig www.rahulcoder.com +short
-dig rahulcoder.com +short
-dig www.rahulcoder.com +short
   Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul Rahul  Rahul  developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.<span className="text-[#4ED7F1]  ml-4"> Call  Me Now .. Please OKay dig rahulcoder.com +short
 dig www.rahulcoder.com +short sudipta paul
  bro</span></motion.p>
